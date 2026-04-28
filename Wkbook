@@ -1,5 +1,6 @@
-- name: Install dependencies
-  run: |
-    pip install --upgrade pip
-    pip install -r forecast_qc_pipeline/requirements.txt
-    pip install git+https://${{ secrets.GITHUB_TOKEN }}@github.com/EMOrg-Prd/uncon_dynamic_data_analytic.git#subdirectory=Extracted_gunbarrel_plot
+TODO — Post PR #8 Follow-up Items:
+1. Move TYPE_CURVE_AREA_MAP to database (currently hardcoded in mappings.py)
+2. Move TARGET_FORMATION_MAP to database (currently hardcoded in mappings.py)  
+3. Move mapping functions to a shared utils library
+4. Resolve pip install from GitHub Enterprise authentication in CI
+5. gunbarrel_plot.py — remove duplicate from sietch, import from Extracted_gunbarrel_plot (deferred by Gauthier)
