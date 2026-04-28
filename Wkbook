@@ -1,1 +1,5 @@
-
+- name: Install dependencies
+  run: |
+    pip install --upgrade pip
+    pip install -r forecast_qc_pipeline/requirements.txt
+    pip install git+https://${{ secrets.GITHUB_TOKEN }}@github.com/EMOrg-Prd/uncon_dynamic_data_analytic.git#subdirectory=Extracted_gunbarrel_plot
