@@ -1,1 +1,34 @@
 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r forecast_qc_pipeline/requirements.txt
+          pip install git+https://github.com/EMOrg-Prd/uncon_dynamic_data_analytic.git#subdirectory=Extracted_gunbarrel_plot
+
+      - name: Run forecast_qc_pipeline tests
+        run: |
+          cd forecast_qc_pipeline
+          pytest tests.py -v --tb=short
+
+      - name: Run gunbarrel plot tests
+        run: |
+          cd Extracted_gunbarrel_plot
+          pytest tests_gunbarrel_plot.py -v --tb=short
