@@ -1,1 +1,5 @@
-
+- Updated gunbarrel plot and colour scheme
+- Added sietch pipeline modules
+- Added THOR session dropdown
+- Added well data display table
+- Moved gunbarrel_plot.py and mappings.py to main folder
