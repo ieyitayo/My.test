@@ -1,1 +1,1 @@
-
+PYTHONPATH=$PYTHONPATH:$(pwd) pytest sietch/test_sietch_pipeline.py -v --tb=short
