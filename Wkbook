@@ -1,16 +1,1 @@
-ci: add sietch pipeline tests to CI workflow
 
-
-## What changed
-Added sietch pipeline tests to the CI workflow.
-
-## Why
-Ensures sietch/test_sietch_pipeline.py runs automatically on every push and PR.
-
-## Changes
-- Added Run sietch tests step to ci.yml
-- Fixed PYTHONPATH to include repo root for utils_db and mappings imports
-- Removed duplicate sietch/mappings.py — now uses root level mappings.py
-
-
-PYTHONPATH=$PYTHONPATH:$(pwd) pytest sietch/test_sietch_pipeline.py -v --tb=short
