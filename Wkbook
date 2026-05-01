@@ -1,1 +1,26 @@
+Merged PR #8 adding the SIETCH app, forecast QC pipeline, and gunbarrel plot module to the monorepo. Resolved 9 code review comments, fixed CI failures, and added automated tests for all three modules. Completed ExxonMobil InnerSource registration for the repo. PR #10 open for Gauthier's review.
 
+
+Week of April 28 – May 1, 2026
+Stella Eyitayo | Uncon Dynamic Data Analytics
+🚀 PR #8 Merged — SIETCH App + Forecast QC Pipeline
+Successfully delivered and merged a major PR adding the SIETCH Databricks app, forecast QC pipeline updates, and gunbarrel plot module to the monorepo. Addressed 9 code review comments from Gauthier covering config validation, cost interpolation, mappings extraction, and CI compatibility.
+🔧 CI/CD Pipeline Improvements
+Fixed CI failures including PySpark import guards, workflow permissions (CodeQL compliance), and merge conflict resolution. Added automated test coverage for all three modules — forecast QC pipeline, gunbarrel plot, and SIETCH pipeline.
+📁 Monorepo Housekeeping
+Removed duplicate files, consolidated mappings to root level, and fixed Python path resolution for cross-module imports in CI.
+✅ InnerSource Registration
+Completed ExxonMobil InnerSource registration for uncon_dynamic_data_analytic including custom properties, admin setup, and compliance review.
+⏳ In Progress
+PR #10 open — adding sietch pipeline tests to CI workflow. Awaiting Gauthier's review.Week of April 28 – May 1, 2026
+Stella Eyitayo | Uncon Dynamic Data Analytics
+🚀 PR #8 Merged — SIETCH App + Forecast QC Pipeline
+Successfully delivered and merged a major PR adding the SIETCH Databricks app, forecast QC pipeline updates, and gunbarrel plot module to the monorepo. Addressed 9 code review comments from Gauthier covering config validation, cost interpolation, mappings extraction, and CI compatibility.
+🔧 CI/CD Pipeline Improvements
+Fixed CI failures including PySpark import guards, workflow permissions (CodeQL compliance), and merge conflict resolution. Added automated test coverage for all three modules — forecast QC pipeline, gunbarrel plot, and SIETCH pipeline.
+📁 Monorepo Housekeeping
+Removed duplicate files, consolidated mappings to root level, and fixed Python path resolution for cross-module imports in CI.
+✅ InnerSource Registration
+Completed ExxonMobil InnerSource registration for uncon_dynamic_data_analytic including custom properties, admin setup, and compliance review.
+⏳ In Progress
+PR #10 open — adding sietch pipeline tests to CI workflow. Awaiting Gauthier's review.
