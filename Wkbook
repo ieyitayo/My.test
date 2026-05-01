@@ -1,7 +1,2 @@
-a. Delivered and merged a major PR adding the SIETCH Databricks app, Forecast QC pipeline updates, forecastoutput adjusted parameters, and Gunbarrel plot module to the monorepo
-b. Added automated test coverage with new scripts across all three modules: Forecast QC pipeline, Gunbarrel plot, and SIETCH pipeline
-c. Fixed CI failures including PySpark import guards, workflow permissions (CodeQL compliance), and merge conflict resolution
-d. Monorepo housekeeping — removed duplicate files, consolidated mappings to root level, and fixed Python path resolution for cross-module imports in CI
-e. Set up jobs for the adjusted parameters scripts
-f. Updated the Python script used for ingestion of the PCM data and appending data into the database
+
 
